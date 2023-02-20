@@ -11,13 +11,13 @@ Glassdoor is one the fastest growing jobs and recruiting sites. Glassdoor holds 
 Glassdoor Job Reviews https://www.kaggle.com/datasets/davidgauthier/glassdoor-job-reviews?resource=download
 
 ## Tools / Technology
-Python
-Pandas
-PostgreSQL
-SQLAlchemy
-PySpark
-Tableau
-Machine Learning
+- Python
+- Pandas
+- PostgreSQL
+- SQLAlchemy
+- PySpark
+- Tableau
+- Machine Learning
 
 ## Data Extraction, Transformation and Load
 
