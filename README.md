@@ -20,7 +20,7 @@ Data Cleaning and Processing: Python
 
 **Supervised Machine Learning**
 
-Creating a connection string for the Glassdoor database.Create an engine instance Connect to PostgreSQL server.Read data from PostgreSQL database table and load into a DataFrame instance.Close the database connection.next is Appling different
+Creating a connection string for the Glassdoor database.Create an engine instance Connect to PostgreSQL server.Read data from PostgreSQL database table and load into a DataFrame instance.Close the database connection.next is Appling different Models.
 
 **(1) Decision tree**
  
