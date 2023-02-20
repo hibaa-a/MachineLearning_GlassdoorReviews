@@ -18,8 +18,22 @@ Importing data: SQL?
 
 Data Cleaning and Processing: Python
 
+**Supervised Machine Learning**
 
-Machine Learning: ???
+Creating a connection string for the Glassdoor database.Create an engine instance Connect to PostgreSQL server.Read data from PostgreSQL database table and load into a DataFrame instance.Close the database connection.next is Appling different
+
+(1) Decision tree A decision tree is one of the supervised machine learning algorithms. This algorithm can be used for regression and classification problems.where my Traning ,testing score is (0.7084662294914649) and (0.6312385180649112).
+
+(2) Apply Bagging  Instead of having one decision tree, we make 50 random trees and average their output. Decision trees try to make the best decision possible at every point where my score: 0.637630128597673.
+
+(3) Applying Extremely Random Trees where Training Score is: 0.7084662294914649 Testing Score: 0.6336114513165952 .
+
+(4)Applying Random Forest where Training Score: 0.7084662294914649
+Testing Score: 0.6370560318432333  .
+
+(5) Applying K-nearest neighbors where Acc: 0.626 .because scroe is not very good so we try 2nd lteration where our score improve 1%
+
+
 
 ### Visualisation:
 
