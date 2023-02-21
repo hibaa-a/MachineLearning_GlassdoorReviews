@@ -198,7 +198,8 @@ Using the heatmap, we decided on the following attributes to be used on the mode
 - The scatter plot created based on the results above is as follows:
   
   ![image](https://user-images.githubusercontent.com/111614210/220417794-e5012479-45cc-4517-8b9d-9d42659fe7b4.png)
-
+  
+- Based on the tSNE scatter plot, elbow curve and K-Means Clustering, it can be seen that the reviews can be placed into 3 distinct groups. However, the data will have to be analysed further to understand what these 3 clusters are and how effectively these can be used to predict the helpfulness of reviews.
 
 ## Data Analysis and Visualisation
 Tableau
