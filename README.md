@@ -38,7 +38,7 @@ The dataset contains the following columns:
 - Pros (free text)
 - Cons (free text)
 
-## Tools / Technology
+## Tools / Technologies
 - Python
 - Pandas
 - PostgreSQL
@@ -57,7 +57,7 @@ We used the dataset above and removed all the unnecessary columns and rows with 
 
 The dataset has a column for **Overall Rating** which is the rating given for companies based on the reviewer's work experience. We decided to use this column as target. As we have a target in place already, we decided on Supervised Machine Learning model along with a Neural Network model to train and predict how successful the reviews are.
 
-### Supervised Machine Learning
+### 1) Supervised Machine Learning
 
 We created and trained the following models:
 - Decision Tree
@@ -68,13 +68,13 @@ We created and trained the following models:
 
 We connected to the PostgreSQL using SQLAlchemy engine instance and loaded the data onto a dataframe to create the models. We considered only the numeric columns (work_life_balance, culture_values, diversity_inclusion, career_opp, comp_benefits, senior_mgmt) for the model.
 
-#### 1) Decision Tree
+#### 1a) Decision Tree
  
 The Decision Tree algorithm is used on regression and classification problems. Here, the field **Overall Rating** has 5 values (1 to 5) abd so this is a classification problem. The training and testing scores were 0.7084662294914649 and 0.6312385180649112 respectively.
 
 ![image](https://user-images.githubusercontent.com/111614210/220196831-a6e9b4e7-21a5-4030-9e4d-fd7c6916bcae.png)
 
-#### 2) Bagging
+#### 1b) Bagging
 
 As the accuracy score from the decision tree model above doesn't hit the target of 75% accuracy, we decided to create a random ensemble known as bootstrap aggregating, or bagging. By doing this instead of having one decision tree, we make 50 random trees and average their output.
 
@@ -82,7 +82,7 @@ Doing this took the score further down to 0.637630128597673.
 
 ![image](https://user-images.githubusercontent.com/111614210/220197683-c207d134-40d6-4e6f-866b-d009fbbee61e.png)
 
-#### 3) Extremely Random Trees
+#### 1c) Extremely Random Trees
 
 Extremely Randomized Trees (ET) construct multiple trees like RF (Random Forest) algorithms during training time over the entire dataset. During training, the ET will construct trees over every observation in the dataset but with different subsets of features.
 
@@ -90,7 +90,7 @@ Applying Extremely Random Trees, the training and testing scores were 0.70846622
 
 ![image](https://user-images.githubusercontent.com/111614210/220201278-45f088b8-de7c-447c-ab19-dcf055db41ef.png)
 
-#### 4) Random Forest
+#### 1d) Random Forest
 
 A random forest can perform both regression and classification tasks. It can handle large datasets efficiently and works well with non-linear data. The random forest algorithm provides a higher level of accuracy in predicting outcomes and has better accuracy than other classification algorithms.
 
@@ -98,7 +98,7 @@ Applying Random Forest, the training and testing scores are 0.7084662294914649 a
 
 ![image](https://user-images.githubusercontent.com/111614210/220201742-113070f7-08d9-425d-b4b9-51c266f6a362.png)
 
-#### 5) K-nearest Neighbors
+#### 1e) K-nearest Neighbors
 
 The k-nearest neighbors algorithm, also known as KNN or k-NN, is a non-parametric, supervised learning classifier, which uses proximity to make classifications or predictions about the grouping of an individual data point.
 
@@ -110,9 +110,9 @@ As none of the models hit the target of 75%, we went for second iteration. For t
 
 ![image](https://user-images.githubusercontent.com/111614210/220213920-b7eecb06-72c7-443a-93c7-a8a76967acc3.png)
 
-### Neural Networks
+### 2) Neural Networks
 
-#### Data Preprocessing
+#### 2a) Data Preprocessing
 
 We used the Seaborn Heatmap to determine the correlation between all the numeric columns in the dataset.
 
@@ -130,7 +130,7 @@ Using the heatmap, we decided on the following attributes to be used on the mode
 - 
   ![image](https://user-images.githubusercontent.com/111614210/220222047-1df8ecd6-ba5b-4ae8-b23d-72a52777b33f.png)
   
-#### Compiling, Training and Evaluating the model
+#### 2b) Compiling, Training and Evaluating the model
 **Keras Sequential Model**
 - **Input Features:** The size of the input data selected is the number of input features for the model. Here, it is 94.
 - **Output Layer Size:** The Output Layer size is 1.
@@ -169,7 +169,7 @@ Using the heatmap, we decided on the following attributes to be used on the mode
 - However, there was no change in the accuracy score. 
 
 
-## Unsupervised Machine Learning
+### 3) Unsupervised Machine Learning
 
 ## Data Analysis and Visualisation
 Tableau
