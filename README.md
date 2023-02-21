@@ -114,21 +114,9 @@ As none of the models hit the target of 75%, we went for second iteration. For t
 
 
 
-### Data Analysis and Visualisation
-
-Data Visualisations: Tableau
-
-## Process
-
-### Data Cleaning steps:
-
--
-
--
-
--
-
-## Results
+## Data Analysis and Visualisation
 
 ## Conclusions
+
+## Limitations
 
