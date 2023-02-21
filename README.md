@@ -19,6 +19,25 @@ We will take a deeper look in some of the job reviews to see if we can identify 
 
 Glassdoor Job Reviews https://www.kaggle.com/datasets/davidgauthier/glassdoor-job-reviews?resource=download
 
+The dataset contains the following columns:
+- Firm 
+- Date of Review
+- Job Title
+- Job Location
+- Status of the reviwers
+- Overall Rating (1 to 5)
+- Career Opportunities (1 to 5)
+- Comp & Benefits (1 to 5)
+- Culture and Values (1 to 5)
+- Senior Management (1 to 5)
+- Work / Life Balance (1 to 5)
+- Recommendation of the firm (v - Positive, r - Mild, x - Negative, o - No opinion)
+- Approve of the CEO (v - Positive, r - Mild, x - Negative, o - No opinion)
+- Outlook (v - Positive, r - Mild, x - Negative, o - No opinion)
+- Review Headline (free text)
+- Pros (free text)
+- Cons (free text)
+
 ## Tools / Technology
 - Python
 - Pandas
@@ -95,11 +114,9 @@ As none of the models hit the target of 75%, we went for second iteration. For t
 
 
 
-### Visualisation:
+### Data Analysis and Visualisation
 
 Data Visualisations: Tableau
-
-Storytelling: Google Docs
 
 ## Process
 
@@ -115,11 +132,3 @@ Storytelling: Google Docs
 
 ## Conclusions
 
-
-
-Features
-The columns correspond to the date of the review, the job name, the job location, the status of the reviewers, and the reviews. Reviews are divided in s sub-categories Career Opportunities, Comp & Benefits, Culture & Values, Senior Management, and Work/Life Balance. In addition, employees can add recommendations on the firm, the CEO, and the outlook.
-
-Other information
-Ranking for the recommendation of the firm, CEO approval, and outlook are allocated categories v, r, x, and o, with the following meanings:
-v - Positive, r - Mild, x - Negative, o - No opinion
