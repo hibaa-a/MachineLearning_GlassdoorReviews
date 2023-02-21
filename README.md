@@ -55,7 +55,7 @@ We used the dataset above and removed all the unnecessary columns and rows with 
 
 ## Creation and Training of Machine Learning Models
 
-The dataset has a column for **Overall Rating** which is the rating given for companies based on the user's work experience. We decided to use this column as target. As we have a target in place already, we decided on Supervised Machine Learning model along with a Neural Network model to train and predict how successful the reviews are.
+The dataset has a column for **Overall Rating** which is the rating given for companies based on the reviewer's work experience. We decided to use this column as target. As we have a target in place already, we decided on Supervised Machine Learning model along with a Neural Network model to train and predict how successful the reviews are.
 
 ### Supervised Machine Learning
 
@@ -112,7 +112,64 @@ As none of the models hit the target of 75%, we went for second iteration. For t
 
 ### Neural Networks
 
+#### Data Preprocessing
 
+We used the Seaborn Heatmap to determine the correlation between all the numeric columns in the dataset.
+
+![image](https://user-images.githubusercontent.com/111614210/220220914-adb4b808-b843-4b69-8eb1-3ca7ae528317.png)
+
+Using the heatmap, we decided on the following attributes to be used on the model:
+- **Target:** - The target for the model is the column **overall_rating** which contains values from 1 to 5 is the rating given for companies based on the reviewer's work experience.
+- **Features:** - The features used in the model are the columns listed in the image below:
+
+  ![image](https://user-images.githubusercontent.com/111614210/220221310-6ffd36ed-32c8-4df7-808e-eb38a13e01f6.png)
+
+- **Variables Removed** - The variables **firm, date_review, headline, pros, cons, work_life_balance, diversity_inclusion, comp_benefits** were removed.
+- The variables location and job_title were binned.
+- The categorical data were converted to numeric, and the resulting dataset had 95 columns.
+- 
+  ![image](https://user-images.githubusercontent.com/111614210/220222047-1df8ecd6-ba5b-4ae8-b23d-72a52777b33f.png)
+  
+#### Compiling, Training and Evaluating the model
+**Keras Sequential Model**
+- **Input Features:** The size of the input data selected is the number of input features for the model. Here, it is 94.
+- **Output Layer Size:** The Output Layer size is 1.
+- **Hidden Nodes:**
+    - The number of hidden nodes in Layer 1 is 85, considering a rule of thumb that the number of hidden neurons must be less than twice the size of the input layer. (Krishnan, 2021)
+    - The number of hidden nodes in Layer 2 is 30, considering a rule of thumb that the number of hidden neurons must be 2/3 the size of the input layer, plus the size of the output layer (Krishnan, 2021)
+    
+        ![image](https://user-images.githubusercontent.com/111614210/220223070-b7a5c4d7-4a61-4c32-9d9e-28f8958d4f8a.png)
+        
+- The activation functions **relu** and **softmax** were used on the hidden and output layers respectively. 
+- **Result:** The model based on the parameters above gave an accuracy score of 5.7% which is way below the target of 75%.
+
+**Optimization 1:**
+- To be sure that the correct input features are used, a seaborn heatmap was created on the dataset created while converting categorical data to numeric.
+
+  ![image](https://user-images.githubusercontent.com/111614210/220224427-485710ca-7f1d-43a2-91a4-702f72992b24.png)
+  
+- Following this, the location and job_title columns were removed, and the resulting dataset had 15 columns.
+
+  ![image](https://user-images.githubusercontent.com/111614210/220224727-98f3677e-7472-43d6-af42-08c09f57f24d.png)
+ 
+- The input features and hidden nodes following the optimization are as follows:
+  
+  ![image](https://user-images.githubusercontent.com/111614210/220224954-726815ba-41a0-424a-b2b5-0c7f1892eb7c.png)
+  
+- **Result:** There was no improvement and the model still gave an accuracy score of 5.7%.
+
+**Optimizations 2, 3 & 4:** Anumber of modifications were perfomed on the input features, hidden nodes and layers with no improvement on the accuracy score which continued to stay on 5.7%
+
+**Optimization 5:** 
+- In addition to the seaborn heatmap, Cramer's V statistic was used to compute the correlation between the numerical categorical columns and the highlighted columns were added back to the features list.
+
+![image](https://user-images.githubusercontent.com/111614210/220226939-375bd886-fc59-402f-a6a7-0939944d2389.png)
+
+- The keras tuner was automated to choose the best of activation models, hidden neuron and layers.
+- However, there was no change in the accuracy score. 
+
+
+## Unsupervised Machine Learning
 
 ## Data Analysis and Visualisation
 
