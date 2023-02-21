@@ -168,8 +168,37 @@ Using the heatmap, we decided on the following attributes to be used on the mode
 - The keras tuner was automated to choose the best of activation models, hidden neuron and layers.
 - However, there was no change in the accuracy score. 
 
-
 ### 3) Unsupervised Machine Learning
+
+- The target column (overall_rating) was removed, as it will make an unsupervised model biased.
+- A number of columns like headline, pros, cons, job_title, date_review, location and current were removed as we thought these might have little or no impact on the model.
+- The categorical data were converted to numeric, and the resulting dataset had 438 columns.
+
+  ![image](https://user-images.githubusercontent.com/111614210/220412944-6d1f3ded-f706-488e-93b7-b63fa71326f8.png)
+
+- We then performed dimensionality reduction with PCA which reduced the number of features to 385, preserving 90.1% of the explained variance.
+  
+  ![image](https://user-images.githubusercontent.com/111614210/220413617-64c316fb-4234-4383-9fc4-12ac2422ad46.png)
+
+- t-SNE was run to further reduce the dataset dimensions.
+- We then plotted a scatter plot on the t-SNE output.
+
+![image](https://user-images.githubusercontent.com/111614210/220414799-907b63db-b391-4bc0-be65-91322f2b25e1.png)
+
+- There are no distinct clusters visible.
+- So, an elbow plt was created to identify the best number of clusters.
+ 
+ ![image](https://user-images.githubusercontent.com/111614210/220415585-8e07b20d-a899-453f-bd1e-1a1316ea2f96.png)
+
+- Looking at the plot, elbow seem to appear at k=3.
+- We further analysed the clusters with the best value of k. The following is the dataframe that includes a new column containing the clusters found.
+  
+  ![image](https://user-images.githubusercontent.com/111614210/220417582-4a329ff2-c8e1-44b9-b306-f5dbf6549899.png)
+
+- The scatter plot created based on the results above is as follows:
+  
+  ![image](https://user-images.githubusercontent.com/111614210/220417794-e5012479-45cc-4517-8b9d-9d42659fe7b4.png)
+
 
 ## Data Analysis and Visualisation
 Tableau
