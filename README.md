@@ -2,9 +2,18 @@
 
 ![image](https://user-images.githubusercontent.com/109045338/219970727-a5f333cb-43e0-4ede-b15f-5faee338aca9.png)
 
+## Team
+- Astha Nayak
+- Badrija Khalifa
+- Hibaa Aldubai
+- Kazimierz Lubas
+- Nandhini Nallathambi
+
 ## Proposal 
 
-Glassdoor is one the fastest growing jobs and recruiting sites. Glassdoor holds a growing database of millions of company reviews, CEO approval ratings, salary reports, interview reviews and questions, benefits reviews, office photos and more. We will take a deeper look in some of the job reviews to see if we can identify any trends and interpret the reviews. Our aim is to build a machine learning model using !!!!Natural Language Processing!!! to predict how helpful the Glassdoor reviews are.
+Glassdoor is one the fastest growing jobs and recruiting sites. Glassdoor holds a growing database of millions of company reviews, CEO approval ratings, salary reports, interview reviews and questions, benefits reviews, office photos and more. 
+
+We will take a deeper look in some of the job reviews to see if we can identify any trends and interpret the reviews. Our aim is to build a machine learning model using Natural Language Processing to predict how helpful the Glassdoor reviews are.
 
 ## Dataset
 
@@ -81,6 +90,9 @@ Applying the K-nearest neighbors, we got an accuracy score of 0.626
 As none of the models hit the target of 75%, we went for second iteration. For this, in addition to the input features we had already, we included the columns recommend, ceo_approv, outlook and firm. Though there was a huge improvement with the training scores, the test scores improved slightly. 
 
 ![image](https://user-images.githubusercontent.com/111614210/220213920-b7eecb06-72c7-443a-93c7-a8a76967acc3.png)
+
+### Neural Networks
+
 
 
 ### Visualisation:
