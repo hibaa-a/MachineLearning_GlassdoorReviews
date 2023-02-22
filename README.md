@@ -205,7 +205,7 @@ Using the heatmap, we decided on the following attributes to be used on the mode
 
 We analysed the data and created charts using Tableau. This can be viewed at https://tinyurl.com/32rbwkkx
 
-![image](https://user-images.githubusercontent.com/111614210/220538807-deb9f8be-a889-405b-aed1-2147b8dfa346.png)
+![image](https://user-images.githubusercontent.com/111614210/220688025-801690dd-f7a0-4682-ab02-a18974ec00e5.png)
 
 ## Conclusions
 
