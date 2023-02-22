@@ -108,7 +108,7 @@ Applying the K-nearest neighbors, we got an accuracy score of 0.626
 
 As none of the models hit the target of 75%, we went for second iteration. For this, in addition to the input features we had already, we included the columns recommend, ceo_approv, outlook and firm. Though there was a huge improvement with the training scores, the test scores improved slightly. 
 
-![image](https://user-images.githubusercontent.com/111614210/220213920-b7eecb06-72c7-443a-93c7-a8a76967acc3.png)
+![image](https://user-images.githubusercontent.com/111614210/220540723-d359c8a5-7807-4bf8-b5d3-1e864ec4c0c4.png)
 
 ### 2) Neural Networks
 
