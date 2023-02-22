@@ -135,8 +135,8 @@ Using the heatmap, we decided on the following attributes to be used on the mode
 - **Input Features:** The size of the input data selected is the number of input features for the model. Here, it is 94.
 - **Output Layer Size:** The Output Layer size is 1.
 - **Hidden Nodes:**
-    - The number of hidden nodes in Layer 1 is 85, considering a rule of thumb that the number of hidden neurons must be less than twice the size of the input layer. (Krishnan, 2021)
-    - The number of hidden nodes in Layer 2 is 30, considering a rule of thumb that the number of hidden neurons must be 2/3 the size of the input layer, plus the size of the output layer (Krishnan, 2021)
+    - The number of hidden nodes in Layer 1 is 187, considering a rule of thumb that the number of hidden neurons must be less than twice the size of the input layer. (Krishnan, 2021)
+    - The number of hidden nodes in Layer 2 is 64, considering another rule of thumb that the number of hidden neurons must be 2/3 the size of the input layer, plus the size of the output layer (Krishnan, 2021)
     
         ![image](https://user-images.githubusercontent.com/111614210/220223070-b7a5c4d7-4a61-4c32-9d9e-28f8958d4f8a.png)
         
@@ -210,4 +210,8 @@ We analysed the data and created charts using Tableau. This can be viewed at htt
 ## Conclusions
 
 ## Limitations
+
+## References
+
+Krishnan, S. (2021, September 8). Medium. Retrieved from Medium: https://medium.com/geekculture/introduction-to-neural-network-2f8b8221fbd3
 
