@@ -209,7 +209,15 @@ We analysed the data and created charts using Tableau. This can be viewed at htt
 
 ## Conclusions
 
+1) The Supervised Machine Learning Models performed better than all models that we created. Decision Tree, Extremely Randomized Trees and Random Forest models created a training score of 94%. However, the testing scores were only around 63%. Further analysis could be done around these models to create a better model that analyses the reviews.
+
+2) Based on K-Means Clustering, it can be seen that the reviews can be placed into 4 distinct groups. However, the data will have to be analysed further to understand what these 4 clusters are and how effectively these can be used to predict the helpfulness of reviews.
+
 ## Limitations
+
+1) Only the accuracy scores scross different models were examined which may be a very basic evaluation of the models. Looking at additional metrics like the classification report or confusion matrix could provide a broader point of view and help with better interpretation.
+
+2) The free text columns for Review Healines, Pros and Cons were not used as input features in any of the models. NLP techniques could have been used to convert the text columns into a numeric representation that could then be fed to the models like neural network. This would have given us a wider list of input features to build the models on.
 
 ## References
 
