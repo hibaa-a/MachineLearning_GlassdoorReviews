@@ -190,16 +190,16 @@ Using the heatmap, we decided on the following attributes to be used on the mode
  
  ![image](https://user-images.githubusercontent.com/111614210/220415585-8e07b20d-a899-453f-bd1e-1a1316ea2f96.png)
 
-- Looking at the plot, elbow seem to appear at k=3.
+- Looking at the plot, elbow seem to appear at k=4.
 - We further analysed the clusters with the best value of k. The following is the dataframe that includes a new column containing the clusters found.
   
   ![image](https://user-images.githubusercontent.com/111614210/220417582-4a329ff2-c8e1-44b9-b306-f5dbf6549899.png)
 
 - The scatter plot created based on the results above is as follows:
   
-  ![image](https://user-images.githubusercontent.com/111614210/220417794-e5012479-45cc-4517-8b9d-9d42659fe7b4.png)
+  ![image](https://user-images.githubusercontent.com/111614210/220539587-111ce827-ec5a-4223-a351-aad4ed503dbb.png)
   
-- Based on the tSNE scatter plot, elbow curve and K-Means Clustering, it can be seen that the reviews can be placed into 3 distinct groups. However, the data will have to be analysed further to understand what these 3 clusters are and how effectively these can be used to predict the helpfulness of reviews.
+- Based on the tSNE scatter plot, elbow curve and K-Means Clustering, it can be seen that the reviews can be placed into 3 distinct groups. However, the data will have to be analysed further to understand what these 4 clusters are and how effectively these can be used to predict the helpfulness of reviews.
 
 ## Data Analysis and Visualisation
 
