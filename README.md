@@ -215,7 +215,7 @@ We analysed the data and created charts using Tableau. This can be viewed at htt
 
 ## Limitations
 
-1) Only the accuracy scores scross different models were examined which may be a very basic evaluation of the models. Looking at additional metrics like the classification report or confusion matrix could provide a broader point of view and help with better interpretation.
+1) Only the accuracy scores across different models were examined which may be a very basic evaluation of the models. Looking at additional metrics like the classification report or confusion matrix could provide a broader point of view and help with better interpretation.
 
 2) The free text columns for Review Healines, Pros and Cons were not used as input features in any of the models. NLP techniques could have been used to convert the text columns into a numeric representation that could then be fed to the models like neural network. This would have given us a wider list of input features to build the models on.
 
